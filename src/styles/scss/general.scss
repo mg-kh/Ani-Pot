@@ -1,0 +1,11 @@
+@each $name, $duration in $durations{
+    .animation--#{$name}{
+        animation-duration: $duration;
+    }
+}
+
+@each $name, $iteration in $iteration_counts{
+    .animation-iteration--#{$name}{
+        animation-iteration-count: $iteration;
+    }
+}
